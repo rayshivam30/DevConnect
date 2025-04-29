@@ -1,0 +1,33 @@
+<!-- frontend/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to DevConnect Platform</h1>
+        <button id="createPostBtn">Create New Post</button>
+    </header>
+
+    <section id="newPostForm" style="display: none;">
+        <h2>Create a New Post</h2>
+        <form id="postForm">
+            <input type="text" id="postTitle" placeholder="Title" required>
+            <textarea id="postContent" placeholder="Content" required></textarea>
+            <button type="submit">Submit Post</button>
+        </form>
+    </section>
+
+    <main id="postsContainer">
+        <!-- Blog posts will be loaded here dynamically -->
+    </main>
+
+    <script src="assets/app.js"></script>
+</body>
+</html>
