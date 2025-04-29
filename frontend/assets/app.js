@@ -21,22 +21,6 @@ async function fetchPosts() {
     }
 }
 
-// Display posts
-function displayPosts() {
-    postsContainer.innerHTML = ""; // clear previous posts
-    posts.forEach(post => {
-        const postDiv = document.createElement("div");
-        postDiv.classList.add("post");
-
-        postDiv.innerHTML = `
-            <h2>${post.title}</h2>
-            <p>${post.content}</p>
-            <button onclick="viewPost(${post.id})">View Post</button>
-        `;
-
-        postsContainer.appendChild(postDiv);
-    });
-}
 
 // Show the form for creating a new post
 function showNewPostForm() {
